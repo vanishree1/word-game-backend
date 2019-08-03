@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const errorHandler = require('./_helpers/error_handlers');
 
 const AddWordsController = require('./controllers/AddWordController');
 AddWordsController(app);
