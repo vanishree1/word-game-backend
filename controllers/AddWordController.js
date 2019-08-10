@@ -2,9 +2,9 @@
 module.exports = function(app) {
     
     app.post('/add-word', function(req, res) {
-        console.log('res', req)
-        if(req.word) {
-            res.send(200)
+        if(req.body.data) {
+            console.log('res', req.body.data)
+            res.send('success')
         }
     });
 
